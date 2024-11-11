@@ -1,0 +1,5 @@
+.coverage
+.python-version
+dist/
+__pycache__/
+htmlcov/
