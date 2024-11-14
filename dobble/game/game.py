@@ -20,21 +20,7 @@ class DobbleGame:
     """
 
     def __init__(self, symbols_per_card: int):
-        """
-        Initialise a new Dobble game.
-
-        Args:
-            symbols_per_card (int): Number of symbols to put on each card.
-                                Must be one of the values in VALID_CARD_SIZES.
-
-        Raises:
-            ValueError: If symbols_per_card is not in VALID_CARD_SIZES.
-        """
-        if symbols_per_card not in VALID_CARD_SIZES:
-            valid_options = ", ".join(str(x) for x in VALID_CARD_SIZES)
-            raise ValueError(
-                f"Invalid number of symbols per card. Must be one of: {valid_options}"
-            )
+        """Initialise a new Dobble game."""
 
         self.symbols_per_card = symbols_per_card
         self.cards = self._generate_cards()
